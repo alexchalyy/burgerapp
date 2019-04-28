@@ -1,42 +1,78 @@
-<img src ='assets/img/Burger.png' alt="no image" id = "b"> 
+<div class="row">
+  <div class="col-sm-4">
+  </div>
+  <div class="col-sm-4"><img src='assets/img/Burger.png' alt="no image" id="b"></div>
+  <div class="col-sm-4">
+  </div>
+</div>
 
-<h1>Eat-Da-Burger</h1>
+<div class="row">
+  <div class="col-sm-5">
+  </div>
+  <div class="col-sm-2">
+    <h5>Eat-Da-Burger</h5>
+  </div>
+  <div class="col-sm-5">
+  </div>
+</div>
 
-<h2>Ready to Eat!</h2>
-
-<ul>
-  {{#each cats}}
-    {{#unless sleepy}}
+<div class="row">
+  <div class="col-sm-9">
+    <h5>Ready to Eat!</h5>
+    <ul>
+      {{#each cats}}
+      {{#unless sleepy}}
       {{> cats/cat-block sleep=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
-
-<h2>Devoured</h2>
-
-<ul>
-  {{#each cats}}
-    {{#if sleepy}}
+      {{/unless}}
+      {{/each}}
+    </ul>
+  </div>
+  <div class="col-sm-3">
+    <h5>Devoured</h5>
+    <ul>
+      {{#each cats}}
+      {{#if sleepy}}
       {{> cats/cat-block sleep=false}}
-    {{/if}}
-  {{/each}}
-</ul>
+      {{/if}}
+      {{/each}}
+    </ul>
+  </div>
+</div>
 
 <!--<h2>Add a Cat</h2>-->
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="ca"><!--Cat Name:--></label>
-    <input type="text" id="ca" name="name">
+<div class="row">
+  <div class="col-sm-5">
   </div>
+  <div class="col-sm-4">
+    <form class="create-form">
 
-  <div class="form-group">
-    <!--<label for="sleepy">Sleepy?</label><br>-->
-    <input type="radio" name="sleepy" style = "opacity: 0" value="0" checked><br>
-    <!--<input type="radio" name="sleepy" value="0"> Awake-->
+      <div class="form-group">
+        <label for="ca">
+          <!--Cat Name:--></label>
+        <input type="text" id="ca" name="name">
+      </div>
+
+      <div class="form-group">
+        <!--<label for="sleepy">Sleepy?</label><br>-->
+        <input type="radio" name="sleepy" style="opacity: 0" value="0" checked><br>
+        <!--<input type="radio" name="sleepy" value="0"> Awake-->
+      </div>
+
+      <button type="submit" style="margin-left: 18%;">Submit</button>
+    </form>
   </div>
+  <div class="col-sm-3">
+  </div>
+</div>
 
-  <button type="submit">Submit</button>
-</form>
+<br>
 
-<p>Enter a burger you want to eat Click the "Submit" button.</p>
+<div class="row">
+  <div class="col-sm-4">
+  </div>
+  <div class="col-sm-6">
+    <p>Enter a burger you want to eat Click the "Submit" button.</p>
+  </div>
+  <div class="col-sm-2">
+  </div>
+</div>
