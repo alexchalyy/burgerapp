@@ -22,6 +22,10 @@ var routes = require("./controllers/catsController.js");
 
 app.use(routes);
 
+app.get("/", function(req, res) {
+  res.sendFile(path.join(__dirname, "home.html"));
+});
+
 // Start our server so that it can begin listening to client requests.
 app.listen(PORT, function() {
   // Log (server-side) when our server has started
