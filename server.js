@@ -1,3 +1,8 @@
+//  This program asks the user to enter any number of burgers that have button options to eat them. When the user clicks on a button, the burger moves from a column with ready to eat burgers to the column with eaten burgers.
+//  A big portion of the code was repurposed from the class example on cats.
+//
+//  Written by Alex Chalyy on 4/28/2019.
+
 var express = require("express");
 
 var PORT = process.env.PORT || 8000;

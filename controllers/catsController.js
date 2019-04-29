@@ -12,7 +12,6 @@ router.get("/", function(req, res) {
       cats: data
     };
     console.log(hbsObject);
-    console.log("here!");
     res.render("index", hbsObject);
   });
 });
